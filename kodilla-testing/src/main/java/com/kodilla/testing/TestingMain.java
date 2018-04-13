@@ -8,19 +8,19 @@ public class TestingMain {
     public static void main(String[] args){
         System.out.println("Moduł 6. Wprowadzenie to testowania oprogramowania");
 
-        Calculator calculator = new Calculator(5,4,9, 1);
+        Calculator calculator = new Calculator();
 
-        int add = calculator.getAdd();
+        int add = calculator.add(5, 4);
 
-        if (Objects.equals(add,9)) {
+        if (add == 9) {
             System.out.println("Add test OK");
         } else {
             System.out.println("Error!");
         }
 
-        int subtract = calculator.getSubtract();
+        int sub = calculator.subtract(7, 2);
 
-        if (Objects.equals(subtract,1)) {
+        if (sub == 5) {
             System.out.println("Subtract test OK");
         } else {
             System.out.println("Error!");
